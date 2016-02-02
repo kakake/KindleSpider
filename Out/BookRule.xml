@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rule>
+  <BookSite Name="劝学网" Url="http://www.quanxue.cn" charset="gb2312">
+    <title>.title</title>
+    <auther>.auther</auther>
+    <cover></cover>
+    <introduction>.indextdintr</introduction>
+    <catalog>.index_center_td a</catalog>
+    <content>div.title,div.item,p</content>
+  </BookSite>
+  <BookSite Name="科幻小说网" Url="http://www.kehuan.net.cn" charset="utf-8">
+    <title>.book h1</title>
+    <auther>.book h2 a</auther>
+    <cover></cover>
+    <introduction>.description</introduction>
+    <catalog>.book dl dd a</catalog>
+    <content>.text</content>
+  </BookSite>
+  <BookSite Name="纵横小说网" Url="http://book.zongheng.com" charset="utf-8">
+    <title>.read_con h1</title>
+    <auther>.read_con a.fb</auther>
+    <cover></cover>
+    <introduction></introduction>
+    <catalog>.read_con .chapterBean a</catalog>
+    <content>#chapterContent</content>
+  </BookSite>
+  <!--<SearchSite Name="起点网搜索" SearchUrl="http://sosu.qidian.com/searchresult.aspx?keyword={0}" charset="utf-8" list=".box">
+    <title> .title</title>
+    <auther>.item_info a:first</auther>
+    <cover> .picbox img</cover>
+    <introduction> .txt </introduction>
+    <bookurl>.opt .right a:eq(1)</bookurl>
+  </SearchSite>-->
+  <SearchSite Name="纵横网搜索" SearchUrl="http://search.zongheng.com/search/bookName/{0}/1.html" charset="utf-8" list=".search_text">
+    <title>h2</title>
+    <auther>.rela a</auther>
+    <cover></cover>
+    <introduction>.j_info</introduction>
+    <bookurl eq="1">.search_oprate p span a</bookurl>
+  </SearchSite>
+</Rule>
